@@ -1,8 +1,8 @@
-# Pochacco Social 🐾
+# Pochacco Social
 
 A cozy social media application built with modern web technologies. The project is currently under active development.
 
-## 🌟 Features
+## Features
 
 - **User Authentication**: Secure sign-in and account management
 - **Real-time Posts**: Create and interact with text-based posts
@@ -12,7 +12,7 @@ A cozy social media application built with modern web technologies. The project 
 - **PWA Support**: Install and use as a native app
 - **Dark Mode**: Built-in theme switching capability
 
-## 📸 UI Screenshots
+## UI Screenshots
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
   <img src="https://github.com/user-attachments/assets/bbd9789b-ff8a-4ada-8199-5b0bfea7ea54" width="400" alt="Home Feed" />
@@ -50,11 +50,11 @@ A cozy social media application built with modern web technologies. The project 
   - Responsive Design
   - Service Worker for Offline Support
 
-## 🚧 Development Status
+## Development Status
 
 This project is still under active development. Many features are being added and refined. The current version focuses on core social media functionality with a clean, modern UI.
 
-## 📱 Progressive Web App
+## Progressive Web App
 
 The application is built as a PWA, allowing users to:
 - Install it on their devices
@@ -62,7 +62,7 @@ The application is built as a PWA, allowing users to:
 - Receive push notifications
 - Get app updates automatically
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 Pochacco Social aims to create a cozy, friendly social media environment with:
 - Clean and intuitive interface
@@ -70,11 +70,11 @@ Pochacco Social aims to create a cozy, friendly social media environment with:
 - Accessible design
 - Mobile-first approach
 
-## 💌 Contact
+## Contact
 
 For the complete source code or collaboration inquiries, please contact me through my portfolio website.
 
-## 🔜 Upcoming Features
+## Upcoming Features
 
 - Group Chats
 - Media Sharing
