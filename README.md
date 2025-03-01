@@ -18,7 +18,6 @@ A cozy social media application built with modern web technologies. The project 
 ![Mobile](screenshots/mobile.png)
 *Responsive mobile interface*
 
-</details>
 
 ## 🛠️ Tech Stack
 
