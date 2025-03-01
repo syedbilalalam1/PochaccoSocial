@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 10% 30%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 30%;
+
+    --primary: 270 60% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 10% 30%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 220 10% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 270 60% 65%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 30% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 25% 15%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 25% 15%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 270 60% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 25% 20%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 25% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 220 25% 20%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 270 60% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  * {
+    @apply transition-colors duration-100;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    border-radius: 24px 24px 24px 24px;
+    position: relative;
+    clip-path: path(
+      "M 0,24 C 0,10.745166 10.745166,0 24,0 H calc(100% - 24) C calc(100% - 10.745166),0 100%,10.745166 100%,24 V calc(100% - 24) C 100%,calc(100% - 10.745166) calc(100% - 10.745166),100% calc(100% - 24),100% H 24 C 10.745166,100% 0,calc(100% - 10.745166) 0,calc(100% - 24) Z"
+    );
+  }
+
+  .bubble-point {
+    clip-path: path("M 0,0 L 16,16 L 16,0 Z");
+  }
+
+  .date-bubble {
+    position: relative;
+    background-color: hsl(var(--card));
+    border: 2px solid hsl(var(--border));
+    border-radius: 999px;
+    transform: rotate(-1deg);
+  }
+
+  .date-bubble::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid hsl(var(--border));
+    border-radius: 999px;
+    transform: rotate(1deg);
+    z-index: -1;
+  }
+}
+
+@layer utilities {
+  .message-texture {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.1;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s infinite;
+  }
+
+  @keyframes bounce-subtle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-200;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-1px);
+  }
+}
+
