@@ -14,9 +14,6 @@ A cozy social media application built with modern web technologies. The project 
 
 ## 📸 UI Screenshots
 
-<details>
-<summary>Click to view screenshots</summary>
-
 ### Mobile View
 ![Mobile](screenshots/mobile.png)
 *Responsive mobile interface*
