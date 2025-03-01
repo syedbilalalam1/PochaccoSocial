@@ -25,6 +25,8 @@ A cozy social media application built with modern web technologies. The project 
   <img src="https://github.com/user-attachments/assets/eed98d01-c928-4d69-8f9e-bbde7439275d" width="400" alt="Settings" />
   <img src="https://github.com/user-attachments/assets/3a4d9a33-adbd-470b-9ae3-095c8357e789" width="400" alt="Mobile View" />
   <img src="https://github.com/user-attachments/assets/1ac64f65-1de8-4e9a-b405-cee3104f6ee9" width="400" alt="Comments" />
+  <img src="https://github.com/user-attachments/assets/82fdfc26-adf2-4f10-8253-67c8ac290328" width="400" alt=EditProfile" />
+  <img src="https://github.com/user-attachments/assets/910b5574-7874-43d7-9d91-524c225166e4" width="400" alt="Suggests" />
 </div>
 
 ## 🛠️ Tech Stack
